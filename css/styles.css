@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
     color: #542e71;
     font-family: 'Ubuntu', sans-serif;
   }
@@ -7,6 +7,21 @@ body {
   h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     color: #542e71;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+
+  .column3 {
+    flex: 33.33%;
+    padding: 5px;
+    justify-content: center;
   }
  
   p, ul, ol {
@@ -24,6 +39,20 @@ body {
   img {
     width: 100%;
     height: auto;
+  }
+
+  .image img {
+    object-fit:cover; 
+    width:700px; 
+    height:700px;
+    transform: scale(1.10);
+    opacity: 0.7;
+    transition: opacity 0.4s, transform 0.4s;
+  }
+
+  .image img:hover {
+    transform: scale(1.03);
+    opacity: 1;
   }
  
   video {
@@ -63,7 +92,7 @@ body {
     text-align: center;
   }
   .content{
-    background-color: #84a9c0;
+    background-color: none;
     color: #fff;
     padding: 10px;
   }
@@ -111,6 +140,40 @@ body {
     transition: box-shadow 1000ms ease-in-out;
     margin: 4px;
   }
+
+  /*imported*/
+  /*
+  * {box-sizing: border-box;}
+
+  .img-comp-container {
+    position: relative;
+    height: 200px; 
+  }
+
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .img-comp-img img {
+    display: block;
+    
+  }
+
+  .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #542e71;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+  */
+  /*end*/
  
  /* desktop screen */
  @media screen and (min-width: 535px) {
