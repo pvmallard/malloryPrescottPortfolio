@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Swordplay</title>
     <link rel="icon" type="image/x-icon" href="./img/rat.png">
+    <script src="./js/sword.js"></script>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css' />
   </head>
@@ -38,10 +39,14 @@
       <div class="content">
         <div class="row" >
             <div class="column">
-              <img src="./img/fantasy.gif">
+              <a class="aiIMG" onclick="playMelody('js/audio/Fantasy_music.wav')">
+                <img src="./img/fantasy.gif">
+              </a>
             </div>
             <div class="column">
-              <img src="./img/space.gif">
+              <a class="aiIMG" onclick="playMelody('js/audio/Space_music.wav')">
+                <img src="./img/space.gif">
+              </a>
             </div>
         </div>
         <div class="row" >
@@ -63,10 +68,14 @@
         </div>
         <div class="row" >
           <div class="column">
-            <img src="./img/pirate.gif">
-            </div>
+            <a class="aiIMG" onclick="playMelody('js/audio/Drunken_sailor.wav')">
+              <img src="./img/pirate.gif">
+            </a>
+          </div>
           <div class="column">
+            <a class="aiIMG" onclick="playMelody('js/audio/Game_music.wav')">
               <img src="./img/videogame.gif">
+            </a>
           </div>
         </div>
         <div class="row" style="justify-content: center;">
