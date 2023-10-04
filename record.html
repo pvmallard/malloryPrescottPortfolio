@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Record Boyz</title>
     <link rel="icon" type="image/x-icon" href="./img/rat.png">
+    <script src="./js/knob.js"></script>
+    <script>window.inputKnobsOptions={fgcolor:"#6a66a3",bgcolor:"#542e71",knobDiameter:"120"}</script>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css' />
   </head>
@@ -29,7 +31,21 @@
       </nav>
 
       <div class="lead-content">
-        <img src="./img/record.gif" alt="Purple Photo" style="object-fit:cover;width:550px;height:500px;">
+        <div class="row" style="align-items: center;justify-content: center;">
+          <div class="column3">
+            <h3>Drum Tracks</h3>
+            <input type="range" class="input-knob" min="0" max="9" step="1" oninput="playDrum(this.value)"/>
+            <button type="button" onclick="pauseAudio()">Pause</button>
+          </div>
+          <div class="column3">
+            <img src="./img/recordB.png" alt="Purple Photo" style="width:auto;height:650px;">
+          </div>
+          <div class="column3">
+            <h3>Melodies</h3>
+            <input type="range" class="input-knob" min="0" max="2" step="1" oninput="playMelody(this.value)"/>
+            <button type="button" onclick="pauseMel()">Pause</button>
+          </div>
+        </div>
         <h1 style="opacity:0.7;">record boyz</h1>
         <p style="opacity:0.7;">Co-Creator: Jayden Skuladottir</p>
         <p>Based on the iconic gramophone, a project that allows the user to mix and match drum tracks and melodies to create their own music.</p>
@@ -49,7 +65,7 @@
         </div>
         <div class="row" >
             <div class="column">
-                <img src="./img/rat.png" alt="Purple Photo">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/z-Fy2BztqOI?si=m_sbd1xbcB8Na3dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="column">
               <p>At first, we decided to have 10 songs for our project which we stored in a folder on the computer inside the same folder as the processing file. We were going to have four potentiometers for our record player to control the song, the volume, the pitch, and the tempo. However, we decided we wanted to be more creative with our project and instead decided to make several different drum tracks and melody tracks that could be mixed and matched and changed with the potentiometers. The music for our project was created in Ableton Live 11. </p>
